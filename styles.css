@@ -180,6 +180,7 @@ nav {
     text-align: left;
     position: fixed;
     width: 100%;
+    top: 60px;
 }
 
 nav li {
