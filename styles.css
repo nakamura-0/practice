@@ -1,0 +1,393 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ここから */
+
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+}
+
+header img {
+    height: 25px;
+    width: 100px;
+    padding-top: 15px;
+}
+
+#slideUp {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+#slideUp span {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    height: 3px;
+    border-radius: 3px;
+}
+
+#slideUp span:nth-child(2) {
+    margin: 4px 0px;
+}
+
+ #slideUp.open span:first-child {
+    transform: translateY(6px) rotate(45deg);
+    transition: all 0.5s;
+}
+
+ #slideUp.open span:nth-child(2) {
+    display: none;
+}
+
+#slideUp.open span:last-child {
+    transition: all 0.5s;
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+nav {
+    background-color: black;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+}
+
+nav li {
+    padding: 15px 0px;
+    border-bottom: solid 1px white;
+    display: block;
+}
+
+nav li a {
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    display: block;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+nav li .fas {
+    padding: 0px 10px;
+}
+
+.header-sns {
+    border-bottom: 1px solid white;
+}
+
+.header-sns .fab {
+    font-size: 20px;
+    margin: 12px 10px;
+}
+
+.sidebar {
+    width: 20%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+.sidebar img {
+    height: 22.42px;
+    width: 87px;
+    padding: 25px 0px 40px 0px;
+}
+
+.side-contents {
+    padding-left: 20%;
+}
+
+.side-contents li a {
+    color: #fff;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.side-contents li a:hover {
+    text-decoration: underline;
+}
+
+.side-contents li {
+    padding-bottom: 25px;
+}
+
+.side-icons .fab {
+    margin-top: 45px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.side-icons .fab:hover {
+    opacity: 0.8;
+}
+
+.contents {
+    width: 80%;
+}
+
+.top-image {
+    width: 100%;
+}
+
+.message-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.headding {
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 22px;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 3px solid white;
+    display: inline-block;
+}
+
+.message-wrapper p {
+    padding-top: 55px;
+    text-align: left;
+}
+
+.photo-wrapper img {
+    width: 33.33333%;
+    vertical-align: bottom;
+}
+
+.photo-wrapper .bigphoto {
+    width: 100%;
+}
+
+.brand-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0px 50px 0px;
+    border-bottom: 1px solid white;
+}
+
+.brand-contents {
+    display: flex;
+    padding-top: 55px;
+}
+
+.brand-item {
+    width: 25%;
+    padding: 0px 25px;
+    text-align: left;
+}
+
+.brand-item img {
+    width: 100%;
+}
+
+.project-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0px 120px 0px ;
+    border-bottom: 1px solid white;
+}
+
+.project-contents {
+    padding-top: 60px;
+}
+
+.project-item {
+ clear: both;
+ overflow: hidden;
+}
+
+.one {
+    padding-bottom: 70px;
+}
+
+.project-item img {
+    width: 375px;
+    height: 225px;
+    padding: 0px 20px 20px 20px;
+    float: left;
+}
+
+.project-item p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.company-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0px 275px 0px;
+}
+
+.company-contents {
+    display: flex;
+    margin-top: 70px;
+}
+
+.info {
+    text-align: left;
+    margin-right: 5%;
+    width: 35%;
+}
+
+.company-contents p {
+    padding-bottom: 5px;
+}
+
+.ggmap {
+    width: 60%;
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    font-size: 12px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+footer a {
+    color: blue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
